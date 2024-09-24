@@ -5,3 +5,15 @@ body {
 h2 {
     font-weight: normal;
 }
+
+table, th, td {
+  border: 3px solid black;
+  margin: 20px auto;
+  position: static;
+}
+
+tr {
+  background: #ff5e00;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 5px;
+}
