@@ -3,6 +3,7 @@
 <head>
   <title>SNACK</title>
   <link rel="icon" type="image/x-icon" href="images/COLE.jpg">
+  <canvas id="myCanvas" width="300" height="150" style="border:1px solid rgb(0, 0, 0)">0</canvas>
   <meta charset="UTF-8">
   <style>
   html, body {
@@ -31,6 +32,9 @@ var context = canvas.getContext('2d');
 // (e.g. 16 * 25 = 400)
 var grid = 32;
 var count = 0;
+var score = 0;
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
 
 var snake = {
   x: 320,
@@ -111,12 +115,14 @@ function loop() {
     // snake ate apple
     if (cell.x === apple.x && cell.y === apple.y) {
       snake.maxCells++;
+      score++;
 
       // canvas is 400x400 which is 25x25 grids
       apple.x = getRandomInt(0, 25) * grid;
       apple.y = getRandomInt(0, 25) * grid;
     }
-
+    
+    ctx.fillText(score, 20, 20);
     // check collision with all cells after this one (modified bubble sort)
     for (var i = index + 1; i < snake.cells.length; i++) {
 
