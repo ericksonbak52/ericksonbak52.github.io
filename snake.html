@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
 
   <body>
-    <canvas id="myCanvas" width="300" height="150"></canvas>
+    <canvas id="myCanvas" width="150" height="150"></canvas>
   </body>
   
   <style>
@@ -38,8 +38,8 @@ var context = canvas.getContext('2d');
 var grid = 32;
 var count = 0;
 var score = 0;
-const c = document.getElementById("myCanvas");
-const ctx = c.getContext("2d");
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
 ctx.font = "50px serif";
 
 var snake = {
@@ -146,7 +146,7 @@ function loop() {
       }
     }
   });
-  ctx.fillText(score, 20, 20);
+  ctx.fillText(score, ctx.width/2, ctx.height/2);
 }
 
 // listen to keyboard events to move the snake
