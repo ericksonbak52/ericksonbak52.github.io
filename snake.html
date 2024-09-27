@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
 
   <body>
-    <canvas id="myCanvas" width="300" height="150" style="border:1px solid rgb(255, 255, 255)">0</canvas>
+    <canvas id="myCanvas" width="300" height="150"></canvas>
   </body>
   
   <style>
@@ -40,6 +40,7 @@ var count = 0;
 var score = 0;
 const c = document.getElementById("myCanvas");
 const ctx = c.getContext("2d");
+ctx.font = "50px serif";
 
 var snake = {
   x: 320,
