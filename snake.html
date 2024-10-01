@@ -152,6 +152,7 @@ function loop() {
   ctx.font = '19 px monospace';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
+  ctx.clearRect(0, 0, c.width, c.height)
   ctx.fillText("score: " + score, c.height / 2, c.width /2);
 }
 
