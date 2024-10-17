@@ -1,0 +1,1 @@
+var taskInput = document.getElementById("uniqueID").value;
