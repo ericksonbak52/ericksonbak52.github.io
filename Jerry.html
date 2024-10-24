@@ -12,12 +12,25 @@
         <p>Don't look at me.</p>
 </head>
 <body>
-    
+    <script type="text/javascript" src="Jerry.js"></script>
     <header>
-        <h1>Do The To Do Things</h1>
-        <form id= "New-Task-Form">
-            <input type="text" id="newFormInput" placeholder="type the thing">
-        </form>
+       <!--creating container for list-->
+        <div id= "todo-container">
+            <!--name of list inside the container-->
+            <div id="header">
+                <h1>doing things list</h1>
+            </div>
+            
+            <!--getting input from user for new thing-->
+            <input type="text" id="inputBox" placeholder="type the thing" class="input-item">
+
+            <!--the add button-->
+            <button id="input-button" onclick = "addTask()">Add</button>
+
+            <!--task list-->
+            <h2>List o things u got to do or something maybe</h2>
+            <ul id="list-container"></ul>
+        </div>
     </header>
 
 </body>

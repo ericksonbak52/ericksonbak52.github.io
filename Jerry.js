@@ -1,1 +1,4 @@
-var taskInput = document.getElementById("uniqueID").value;
+const taskInput = document.getElementById("inputBox");
+function addTask(){
+
+}
