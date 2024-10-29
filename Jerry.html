@@ -1,44 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <title>WORK IN PROGRESS GO AWAY</title>
 <html>
-<head>
-    <meta charset= "UTF-8">
-    <meta http-equiv= "X-UA-Compatible" content="width=device-wdth, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/COLE.jpg">
-    <link href="Jerry.css" type="text/css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="width=device-wdth, initial-scale=1.0"
+        />
+        <link rel="icon" type="image/x-icon" href="images/COLE.jpg" />
+        <link href="Jerry.css" type="text/css" rel="stylesheet" />
 
-    
         <p>Hello my name is baker.</p>
         <p>Don't look at me.</p>
-</head>
-<body>
-    <header>
-       <!--creating container for list-->
-        <div id= "todoContainer">
-            <!--name of list inside the container-->
-            <div id="header">
-                <h1>doing things list</h1>
-            </div>
-            
-            <!--getting input from user for new thing-->
-            <input type="text" id="inputBox" placeholder="type the thing" class="input-item">
+    </head>
+    <body>
+        <header>
+            <!--creating container for list-->
+            <div id="todoContainer">
+                <!--name of list inside the container-->
+                <div id="header">
+                    <h1>doing things list</h1>
+                </div>
 
-            <!--the add button-->
-            <button id="inputButton" onclick="addTask()">Add</button>
-            
-            <!--task list-->
-            <h2>List o things u got to do or something maybe</h2>
-            <ul id="list-container"></ul>
-            <hr />
-<!-- task list counter -->
-            <div class="counter-container">
-            <div id="task-counters">
-                Completed: <span id="completed-counter">0</span> | Uncompleted:
-                <span id="uncompleted-counter">0</span>
+                <!--getting input from user for new thing-->
+                <input
+                    type="text"
+                    id="inputBox"
+                    placeholder="type the thing"
+                    class="input-item"
+                />
+
+                <!--the add button-->
+                <button id="inputButton" onclick="addTask()">Add</button>
+
+                <!--task list-->
+                <h2>List o things u got to do or something maybe</h2>
+                <ul id="listContainer"></ul>
+                <hr />
+
+                <!-- task list counter -->
+                <div class="counter-container">
+                    <div id="task-counters">
+                        Completed: <span id="completed-counter">0</span> |
+                        Uncompleted:
+                        <span id="uncompleted-counter">0</span>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
-    </header>
-    <script type="text/javascript" src="Jerry.js"></script>
-</body>
+        </header>
+        <script type="text/javascript" src="Jerry.js"></script>
+    </body>
 </html>
