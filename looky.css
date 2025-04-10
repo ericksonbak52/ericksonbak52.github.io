@@ -22,7 +22,7 @@ tr {
 
 .hidden {
     background: #58e209;
-    border: none;
+    border: 2px solid black;
 }
 
 .codepen {
