@@ -20,6 +20,10 @@ tr {
     margin-bottom: 5px;
 }
 
+.lookg{
+    border: 3px solid black;
+}
+
 .hidden {
     background: #58e209;
     border: none;
