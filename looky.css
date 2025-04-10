@@ -22,6 +22,7 @@ tr {
 
 .lookg{
     border: 3px solid black;
+    outline: none;
 }
 
 .hidden {
