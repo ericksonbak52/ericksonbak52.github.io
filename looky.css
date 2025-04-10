@@ -1,34 +1,41 @@
 body {
-  background-color: #58e209;
+    background-color: #58e209;
 }
 
 h2 {
     font-weight: normal;
 }
 
-table, th, td {
-  border: 3px solid black;
-  margin: 20px auto;
-  position: static;
+table,
+th,
+td {
+    border: 3px solid black;
+    margin: 20px auto;
+    position: static;
 }
 
 tr {
-  background: #ff5e00;
-  border-bottom: 1px solid #000000;
-  margin-bottom: 5px;
+    background: #ff5e00;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 5px;
+}
+
+.hidden {
+    background: #58e209;
+    border: none;
 }
 
 .codepen {
-  max-width: 100px; /* Set your desired max width */
-  margin: 0 auto;   /* Center the embed */
+    max-width: 100px; /* Set your desired max width */
+    margin: 0 auto; /* Center the embed */
 }
 
 iframe {
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 div {
-  background:#000000;
-  width:50px;
+    background: #000000;
+    width: 50px;
 }
