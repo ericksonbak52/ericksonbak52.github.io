@@ -1,0 +1,152 @@
+html {
+  font-family: "PT Sans Caption", monospace;
+  color: white;
+  background-color: #1e1e1e;
+}
+
+::selection {
+  color: white;
+  background: #58e209;
+}
+
+a:link {
+  color: #58e209;
+  text-decoration: none;
+}
+
+div {
+  cursor: vertical-text;
+}
+
+h1,
+h2 {
+  white-space: pre;
+  display: inline-block;
+  margin: 0 auto;
+  width: fit-content;
+  transition: 0.4s;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+h2:hover {
+  transition: 0.2s;
+  color: #58e209;
+  text-shadow: 0 0 12px #58e209;
+}
+
+h1:hover {
+  transition: 0.2s;
+  color: #58e209;
+  text-shadow: 0 0 10px #58e209;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #58e209;
+}
+
+body {
+  background-color: #1e1e1e;
+  margin-top: 60px;
+}
+
+.navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 1000;
+  display: table;
+  position: fixed;
+  border-spacing: 4px 0px;
+  border-collapse: separate;
+  font-size: 13.5px;
+  white-space: nowrap;
+  align-content: center;
+  width: 100%;
+  table-layout: fixed;
+  background-color: black;
+}
+
+.navdiv {
+  width: 90%;
+  min-width: 650px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 12px;
+  display: table;
+  table-layout: fixed;
+  border-spacing: 7px 0px;
+  font-size: 13.5px;
+  white-space: nowrap;
+  top: 10;
+}
+
+.navrow {
+  display: table-row;
+  align-content: center;
+}
+
+.td {
+  transition: 0.5s;
+  display: table-cell;
+  width: 20px;
+  vertical-align: middle;
+  height: 25px;
+  text-align: center;
+  font-size: auto;
+  padding: 3px;
+  background: black;
+  border: 2px solid white;
+  border-radius: 9px;
+}
+
+.td:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 4px 5px #58e209;
+  border: 2px solid #58e209;
+  transform: translateY(-2px);
+}
+
+.image {
+  cursor: default;
+  transition: 0.5s;
+  margin: 8px;
+  border: 3px solid black;
+  box-shadow: 0 0 0 4px white, 0 0 0 6px black;
+}
+
+.gallery {
+  text-align: center;
+  width: 100%;
+}
+
+.image:hover {
+  transition: 0.3s;
+  border: 3px solid black;
+  box-shadow: 0 0 0 4px #58e209, 0 0 0 6px black, 0 9px 15px #58e209;
+  transform: translateY(-2px);
+}
+
+.hidden {
+  background: #1e1e1e;
+  border: none;
+}
+
+.codepen {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+}
