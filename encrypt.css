@@ -14,7 +14,7 @@ html {
     font-weight: bold;
     margin-top: 5px;
     color: #58e209;
-    width: 80px;
+    width: 85px;
     transition: 0.5s;
     display: table-cell;
     vertical-align: middle;
@@ -216,4 +216,8 @@ a:visited {
     box-shadow: 0 4px 5px #58e209;
     border: 2px solid #58e209;
     transform: translateY(-2px);
+}
+
+.hide{
+  display: none;
 }

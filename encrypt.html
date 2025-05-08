@@ -1,51 +1,68 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="encrypt.css"/>
-  <title>Encryption</title>
-   <div class="navbar">
-      <div class = "navdiv">
+  <head>
+    <link rel="stylesheet" href="encrypt.css" />
+    <title>Encryption</title>
+    <div class="navbar">
+      <div class="navdiv">
         <div class="navrow">
-           <a href="index.html" class="td">Home</a>
-          <a href="eaglecraft.html" class="td">Game</a>
+          <a href="index.html" class="td">Home</a>
+          <a href="pages/eaglecraft.html" class="td">Game</a>
           <a href="images/COLE.jpg" class="td">Cole</a>
-          <a href="tetris.html" class="td">Teeetrees</a>
-          <a href="https://www.youtube.com/channel/UC_hK9fOxyy_TM8FJGXIyG8Q" class="td">Nothing</a>
-          <a href="Jerry.html" class="td">destroy</a>
-          <a href="Survey.html" class="td">Survey</a>
+          <a href="pages/tetris.html" class="td">Teeetrees</a>
+          <a
+            href="https://www.youtube.com/channel/UC_hK9fOxyy_TM8FJGXIyG8Q"
+            class="td"
+            >Nothing</a
+          >
+          <a href="pages/Jerry.html" class="td">destroy</a>
+          <a href="pages/Survey.html" class="td">Survey</a>
         </div>
       </div>
-  </div>
-  <table>
-    <tr>
-      <th id="left-tab" class="leftend active-tab" onclick="updateTab('1')">Encode</th>
-      <th id="right-tab" class="rightend" onclick="updateTab('2')">Decode</th>
-    </tr>
-  </table>
-  <h3><output id="title">Hello</output></h3>
-  <div>
-    <button id="hidden" onclick="hide()" class="id">Hide Input</button>
-  </div>
-  <div>
-    <span><button class="id" onclick="change('c')">Caesar</button></span>
-    <span><button class="id" onclick="change('v')">Vigenere</button></span>
-  </div>
-</head>
-<hr>
-<body>
-  <h3>Caesar cipher or something</h3>
+    </div>
+
+    <table>
+      <tr>
+        <th id="left-tab" class="leftend active-tab" onclick="updateTab('1')">
+          Encode
+        </th>
+        <th id="right-tab" class="rightend" onclick="updateTab('2')">Decode</th>
+      </tr>
+    </table>
+    
+    <h3><output id="title">Hello</output></h3>
+    
+    <div>
+      <button id="hidden" onclick="hide()" class="id">Hide Input</button>
+    </div>
+    
+    <div>
+      <span><button class="id" onclick="change('c')">Caesar</button></span>
+      <span><button class="id" onclick="change('v')">Vigenere</button></span>
+    </div>
+  </head>
+  <hr />
   
-  <div id="input-div">
-    <input type="text" id="text-input" placeholder="Message to Encode" onkeyup="clicky()" autofocus>
-  </div>
-  
-  <hr>
-  <span><h3>Output:</h3></span>
-  
-  <div class="output">
-    <output class="text" id="output"></output>
-  </div>
-  
-  <script type="text/javascript" src="/encrypt.js" defer></script>
-</body>
+  <body>
+    <h3>Caesar cipher or something</h3>
+
+    <div id="input-div">
+      <input
+        type="text"
+        id="text-input"
+        placeholder="Message to Encode"
+        onkeyup="clicky()"
+        autofocus
+      />
+    </div>
+
+    <hr />
+    <span><h3>Output:</h3></span>
+
+    <div class="output">
+      <output class="text" id="output"></output>
+    </div>
+
+    <script type="text/javascript" src="/encrypt.js" defer></script>
+  </body>
 </html>
