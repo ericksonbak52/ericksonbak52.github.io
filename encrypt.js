@@ -77,6 +77,10 @@ function clicky() {
 
 //hiding text
 function hide() {
+  if(input.value.trim() == "Minecraft"){
+   window.location.replace("pages/eagler.html") 
+  }
+  
   hidden = !hidden;
   if (hidden) {
     input.type = "password";
