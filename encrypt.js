@@ -30,7 +30,7 @@ function updateTab(tab){
     leftTab.classList.toggle("active-tab", false);
     rightTab.classList.toggle("active-tab", true);
   }
-  
+
   clicky();
 }
 
@@ -56,14 +56,14 @@ function change(x) {
 function clicky() {
   const text = input.value.trim();
   var num = "";
- 
+
   if (cypher == "caesar") {
     if(mode == "encode"){
       num = caesarShift.value;
       output.value = caesar(text, num);
     }else{
      return caesar(text, -num);
-    } 
+    }
   } else {
     if(mode == "encode"){
       num = vigShift.value.trim();
@@ -78,9 +78,9 @@ function clicky() {
 //hiding text
 function hide() {
   if(input.value.trim() == "Minecraft"){
-   window.location.replace("pages/eagler.html") 
+   window.location.replace("pages/stuff.html")
   }
-  
+
   hidden = !hidden;
   if (hidden) {
     input.type = "password";
@@ -153,7 +153,7 @@ function vigenere(message, key) {
 //decripting vigenere cypher
 function unVigenere(message, key) {
   let result = ''
- 
+
   for (let i = 0, j = 0; i < message.length; i++) {
     const c = message.charAt(i)
     if (isLetter(c)) {
